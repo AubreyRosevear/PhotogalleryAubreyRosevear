@@ -1,0 +1,26 @@
+/*main styles*/
+
+html{
+    background: #000000;
+}
+header {
+    background: #000000;
+    width: 485px;
+    height: 100px;
+}
+body {
+    width: 485px;
+    margin: 0 auto;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+
+h1 {
+    font-size: 3em;
+    color: #007d7b;
+    text-transform: uppercase;
+    float: left;
+    width: 485px;
+    position: absolute;
+    margin: 25px 0px;
+}
