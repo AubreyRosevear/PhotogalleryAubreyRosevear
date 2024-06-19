@@ -19,6 +19,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="top">Top</a></li>
         </ul>
       </nav>
     </div>
@@ -34,81 +35,82 @@
         </section>
 
         <section id="images">
-            <figure id="chile">
+            <figure class="text-overlay">
                 <img src="C:\Users\aubre\OneDrive\Documents\ASU\GIT 337\PhotoGalleryAssignment\images\Chile.png" alt="Chile, 2001">
-                <figcaption>Chile, 2001</figcaption>
+                <figcaption class="image white">Chile, 2001</figcaption>
             </figure>
 
-            <figure id="guatemala">
+            <figure class="text-overlay">
                 <img src="C:\Users\aubre\OneDrive\Documents\ASU\GIT 337\PhotoGalleryAssignment\images\Guatemala.png" alt="Guatemala, 1997">
-                <figcaption>Guatemala, 1997</figcaption>
+                <figcaption class="image white">Guatemala, 1997</figcaption>
             </figure>
 
-            <figure id="hawaii">
+            <figure class="text-overlay">
                 <img src="C:\Users\aubre\OneDrive\Documents\ASU\GIT 337\PhotoGalleryAssignment\images\Hawaii.png" alt="Hawaii, 2010">
-                <figcaption>Hawaii, 2010</figcaption>
+                <figcaption class="image white">Hawaii, 2010</figcaption>
             </figure>
 
-            <figure id="iran">
+            <figure class="text-overlay"> 
                 <img src="C:\Users\aubre\OneDrive\Documents\ASU\GIT 337\PhotoGalleryAssignment\images\Iran.png" alt="Iran, 1999">
-                <figcaption>Iran, 1999</figcaption>
+                <figcaption class="image black">Iran, 1999</figcaption>
             </figure>
 
-            <figure id="ireland">
+            <figure class="text-overlay">
                 <img src="C:\Users\aubre\OneDrive\Documents\ASU\GIT 337\PhotoGalleryAssignment\images\Ireland.png" alt="Ireland, 2012">
-                <figcaption>Ireland, 2012</figcaption>
+                <figcaption class="image white">Ireland, 2012</figcaption>
             </figure>
 
-            <figure id="italy">
+            <figure class="text-overlay">
                 <img src="C:\Users\aubre\OneDrive\Documents\ASU\GIT 337\PhotoGalleryAssignment\images\Italy.png" alt="Italy, 2015">
-                <figcaption>Italy, 2015</figcaption>
+                <figcaption class="image white">Italy, 2015</figcaption>
             </figure>
 
-            <figure id="moab">
+            <figure class="text-overlay">
                 <img src="C:\Users\aubre\OneDrive\Documents\ASU\GIT 337\PhotoGalleryAssignment\images\Moab-Desert.png" alt="Moab Desert, 2020">
-                <figcaption>Moab Desert, 2020</figcaption>
+                <figcaption class="image white">Moab Desert, 2020</figcaption>
             </figure>
 
-            <figure id="rocky">
+            <figure class="text-overlay">
                 <img src="C:\Users\aubre\OneDrive\Documents\ASU\GIT 337\PhotoGalleryAssignment\images\Rocky-Mountains.png" alt="Rocky Mountains, 2009">
-                <figcaption>Rocky Mountains, 2009</figcaption>
+                <figcaption class="image black">Rocky Mountains, 2009</figcaption>
             </figure>
 
-            <figure id="switzerland">
+            <figure class="text-overlay">
                 <img src="C:\Users\aubre\OneDrive\Documents\ASU\GIT 337\PhotoGalleryAssignment\images\Switzerland.png" alt="Switzerland, 2014">
-                <figcaption>Switzerland, 2014</figcaption>
+                <figcaption class="image black">Switzerland, 2014</figcaption>
             </figure>
 
-            <figure id="uk">
+            <figure class="text-overlay">
                 <img src="C:\Users\aubre\OneDrive\Documents\ASU\GIT 337\PhotoGalleryAssignment\images\UK.png" alt="UK, 2005">
-                <figcaption>UK, 2005</figcaption>
+                <figcaption class="image white">UK, 2005</figcaption>
             </figure>
 
-            <figure id="usa">
+            <figure class="text-overlay">
                 <img src="C:\Users\aubre\OneDrive\Documents\ASU\GIT 337\PhotoGalleryAssignment\images\USA.png" alt="USA, 2021">
-                <figcaption>USA, 2021</figcaption>
+                <figcaption class="image white">USA, 2021</figcaption>
             </figure>
 
-            <figure id="wyoming">
+            <figure class="text-overlay">
                 <img src="C:\Users\aubre\OneDrive\Documents\ASU\GIT 337\PhotoGalleryAssignment\images\Wyoming.png" alt="Wyoming, 2021">
-                <figcaption>Wyoming, 2021</figcaption>
+                <figcaption class="image white">Wyoming, 2021</figcaption>
             </figure>
         </section>
     </main>
-    <section>
-        <form action="" method="post">
+    <section id="contact">
+        <form>
             <h2>Contact</h2>
-            <p>Please fill out this form and I’ll connect with you soon.</p>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Your Full Name" required>
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email" placeholder="Enter your email address" required>
-            <label for="message">Message</label>
-            <textarea name="message" id="message" rows="6" cols="100" placeholder="What acan I help you with?"></textarea>
-
-            <div id="button">
-                <input type="submit" id="submit" value="Submit">
-            </div> 
+                <p>Please fill out this form and I’ll connect with you soon.</p>
+                <div class="post">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your Full Name" required>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Enter your email address" required>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="1" cols="30" placeholder="What acan I help you with?"></textarea>
+                </div>
+            <button>
+                Submit
+            </button> 
         </form>
     </section>
     <footer>

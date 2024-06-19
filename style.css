@@ -4,17 +4,17 @@ html{
     background: #000000;
 }
 header {
-    background: #000000;
+    background: #FFFFFF;
     width: 485px;
     height: 100px;
+    text-align: center;
 }
 body {
     width: 485px;
     margin: 0 auto;
     font-family:Arial, Helvetica, sans-serif;
-    color: #FFFFFF;
+    background: #FFFFFF;
 }
-
 h1 {
     font-size: 3em;
     color: #007d7b;
@@ -23,4 +23,274 @@ h1 {
     width: 485px;
     position: absolute;
     margin: 25px 0px;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2em;
+    color: #000000;
+    text-transform: uppercase;
+}
+p {
+    font-size: 1.25em;
+    padding: 10px;
+}
+nav {
+    float: right;
+    background: #000000;
+    width: 485px;
+}
+.gripwrap {
+    clear: both;
+    padding: 0%;
+    margin: auto;
+}
+nav li {
+    display: inline-block;
+    margin: 10px 10px 10px 10px;
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#about h2 {
+    padding-top: 10px;
+}
+#about h2, #gallery h2 {
+    text-align: center;
+    font-weight: bold;
+}
+[href="top"] {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    width: 100px;
+    height:40px;
+    background: #007d7b;
+    padding: 5px;
+    text-align: center;
+    z-index: 1;
+}
+main {
+    clear: both;
+}
+#images {
+    position: relative;
+    display: block;
+    margin: 10px;
+    overflow:auto;
+}
+.white {
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.black {
+    text-transform: uppercase;
+    color: #000000;
+}
+.images figcaption {
+    position: relative;
+    font-size: 1em;
+}
+.text-overlay {
+    box-sizing:border-box;
+    position: relative;
+}
+.text-overlay figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    box-sizing: border-box;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 10px;    
+}
+#contact {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 485px;
+    background-color: #000000;
+    color: #ffffff;
+    justify-content: center;
+}
+#contact h2 {
+    padding-top: 25px;
+}
+#contact h2, #contact h2+p {
+    text-align: center;
+    margin: 10px auto auto 5px;
+    color: #FFFFFF;
+}
+#contact form {
+    text-align: left;
+}
+#contact label, ::placeholder {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+#contact label {
+    padding: 15px;
+    padding-top: 10px;
+}
+#contact input {
+    width: 425px;
+    height: 28px;
+}
+::placeholder {
+    color: #007d7b;
+}
+.post{
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 120px;
+    width: 100%;
+    height: 25px;
+    padding: 10px;
+}
+button {
+    background: #007d7b;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    width: 250px;
+    height: 40px;
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+button:active {
+    color: #007d7b;
+    background: #FFFFFF;
+}
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: small;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*Media Query Syles*/
+
+@media screen and (min-width:880px) {
+    h1 {
+        text-align: left;
+        font-weight: bold;
+    }
+    body {
+        width: 880px;
+    }
+    nav {
+        height: 110px;
+        width: 880px;
+        text-align: center;
+    }
+    nav ul {
+        display: inline-flex;
+        height: 100px;
+    }
+    nav li {
+        text-decoration: none;
+        position: relative;
+        height: 60px;
+        top: 35px;
+        margin: 10px;
+    }
+    img {
+        width: 100%;
+    }
+    #images, #gallery, #about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat (6, 1fr);
+        column-gap: 15px;
+        margin: auto;
+        justify-content: center;
+    }
+    #about p, #gallery p {
+        display: inline-flex;
+        text-align: center;
+    }
+    .post{
+        display: block;
+        margin-left: 150px;
+        margin-bottom: 120px;
+        width: 70%;
+        height: 25px;
+        padding: 10px;
+    }
+    form {
+        width: 880px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    h1 {
+        text-align: left;
+        font-weight: bold;
+    }
+    body {
+        width: 1300px;
+    }
+    nav {
+        height: 110px;
+        width: 1300px;
+        text-align: right;
+    }
+    nav ul {
+        display: inline-flex;
+        height: 100px;
+    }
+    nav li {
+        text-decoration: none;
+        position: relative;
+        height: 60px;
+        top: 35px;
+        margin: 10px;
+    }
+    img {
+        width: 100%;
+    }
+    #images, #gallery, #about {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat (6, 1fr);
+        gap: 15px;
+        margin: auto;
+        justify-content: center;
+    }
+    #about p, #gallery p {
+        display: inline-flex;
+        text-align: center;
+    }
+    #contact {
+        width: 1300px;
+        text-align: center;
+        display: inline-block;
+    }
+    .post{
+        display: block;
+        margin-left: 150px;
+        margin-bottom: 120px;
+        width: 70%;
+        height: 25px;
+        padding: 10px;
+    }
+    form {
+        width: 1300px;
+        margin: auto;
+    }
 }
